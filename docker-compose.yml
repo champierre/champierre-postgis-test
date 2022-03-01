@@ -21,6 +21,7 @@ services:
     environment:
       - POSTGRES_PASSWORD=changeme
     volumes:
+      - .:/usr/src/app
       - pg_data:/var/lib/postgresql/data
   redis:
     image: redis
